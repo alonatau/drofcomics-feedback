@@ -1,0 +1,41 @@
+name: Comic not found
+description: A barcode or ISBN the scanner couldn't identify
+title: "[Not found] "
+labels: ["missing comic"]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Barcode or ISBN
+      description: All the numbers under the barcode, including the small ones on the right.
+      placeholder: "9798887243597 52499"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Comic title and issue
+      placeholder: "Star Trek: Lore War"
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher and year
+      placeholder: IDW, 2026
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - Single issue
+        - Trade paperback / graphic novel
+        - Hardcover
+        - Manga
+        - Magazine
+        - Other
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: English, German, French...

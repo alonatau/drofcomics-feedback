@@ -1,0 +1,58 @@
+name: Bug report
+description: Something is broken or looks wrong
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! This page is public, so please don't include your email or other private details.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Tell us what went wrong.
+      placeholder: When I tap Scan on the home page, nothing opens.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. See ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+  - type: input
+    id: page
+    attributes:
+      label: Page link
+      description: The address of the page where it happened, if you have it.
+      placeholder: https://drofcomics.com/MyCollection
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Android phone
+        - iPhone
+        - iPad / tablet
+        - Windows computer
+        - Mac
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: Chrome, Safari, Firefox, the installed app...
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images here if you have any. Please hide anything private.

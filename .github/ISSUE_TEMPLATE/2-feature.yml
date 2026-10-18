@@ -1,0 +1,32 @@
+name: Feature request
+description: An idea to make the app better
+title: "[Idea] "
+labels: ["feature request"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should the app do?
+      placeholder: Let me crop the cover photo before it's analyzed.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: What problem does it solve for you?
+      placeholder: My scans include my fingers and the table.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Part of the app
+      options:
+        - Scanning (photo or barcode)
+        - My Collection
+        - Libraries and shelves
+        - Wish List / Pull List
+        - New Releases
+        - Profiles and social
+        - Book Club
+        - Other
